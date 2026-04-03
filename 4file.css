@@ -1,0 +1,132 @@
+:root {
+    --cream-bg: #F2E8C9;
+    --dark-text: #000000;
+    --orange: #E69B00;
+    --green-dark: #2D4A1E;
+    --white: #FFFFFF;
+    --gray-line: #000000; /* Lignes de séparation noires comme sur l'image */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f5f5f5; /* Fond extérieur pour simuler le cadre */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Cadre simulant l'affichage du site web */
+.site-frame {
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--cream-bg);
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.queue-container {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: var(--dark-text);
+}
+
+/* Style du Tableau */
+.queue-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 35px;
+}
+
+.queue-table th {
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.queue-table td {
+    padding: 15px 0;
+    border-top: 1.5px solid var(--gray-line);
+    text-align: left;
+    font-size: 14px;
+}
+
+.queue-table td.num {
+    font-weight: 700;
+}
+
+.queue-table td.service {
+    color: #444;
+}
+
+/* Badges de Statut */
+.status-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 10px;
+    font-weight: 700;
+    min-width: 90px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.status-orange {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.status-white {
+    background-color: var(--white);
+    color: var(--dark-text);
+    border: 1px solid #ddd;
+}
+
+.status-green {
+    background-color: var(--green-dark);
+    color: var(--white);
+}
+
+/* Bannière Temps d'attente (Verte) */
+.info-banner {
+    background-color: var(--green-dark);
+    color: var(--white);
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(45, 74, 30, 0.3);
+}
+
+/* Bouton Actualiser (Orange) */
+.btn-refresh {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 14px 45px;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(230, 155, 0, 0.3);
+    transition: transform 0.1s;
+}
+
+.btn-refresh:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexto - Admin Panel</title>
+    <link rel="stylesheet" href="5admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="admin-frame">
+        <nav class="admin-nav">
+            <div class="logo">
+                <span class="logo-circle"></span> Nexto
+            </div>
+            <div class="panel-title">Admin Panel</div>
+        </nav>
+
+        <div class="admin-grid">
+            <div class="dashboard-main">
+                
+                <section class="admin-section">
+                    <h2>INFORMATION ACTUELLES</h2>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <span class="card-label">NUMÉRO ACTUEL</span>
+                            <span class="card-value large">A042</span>
+                        </div>
+                        <div class="info-card">
+                            <span class="card-label">GUICHET</span>
+                            <span class="card-value large">03</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="admin-section">
+                    <h2>ACTIONS</h2>
+                    <div class="action-buttons">
+                        <button class="btn-action orange">APPELER SUIVANT</button>
+                        <button class="btn-action green-light">ANNULER TICKET</button>
+                        <button class="btn-action green-dark">REINITIALISER</button>
+                    </div>
+                </section>
+
+                <section class="admin-section">
+                    <h2>HISTORIQUE - TICKETS TERMINÉS</h2>
+                    <table class="history-table">
+                        <thead>
+                            <tr>
+                                <th>NUMÉRO</th>
+                                <th>HEURE</th>
+                                <th>GUICHET</th>
+                                <th>STATUT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>A041</td><td>14:32</td><td>03</td><td>Terminé</td></tr>
+                            <tr><td>A040</td><td>14:28</td><td>02</td><td>Terminé</td></tr>
+                            <tr><td>A039</td><td>14:25</td><td>01</td><td>Terminé</td></tr>
+                            <tr><td>A038</td><td>14:20</td><td>03</td><td>Terminé</td></tr>
+                            <tr><td>A037</td><td>14:15</td><td>02</td><td>Terminé</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+
+            <aside class="sidebar-queue">
+                <div class="sidebar-header">
+                    <h2>FILE D'ATTENTE</h2>
+                    <div class="tickets-count">TICKETS EN ATTENTE <span>8</span></div>
+                </div>
+                
+                <div class="queue-scroll">
+                    <div class="waiting-card">
+                        <span class="ticket-id">A043</span>
+                        <span class="wait-time">Temps d'attente: 12 min</span>
+                    </div>
+                    <div class="waiting-card">
+                        <span class="ticket-id">A044</span>
+                        <span class="wait-time">Temps d'attente: 12 min</span>
+                    </div>
+                    <div class="waiting-card">
+                        <span class="ticket-id">A045</span>
+                        <span class="wait-time">Temps d'attente: 12 min</span>
+                    </div>
+                    <div class="waiting-card">
+                        <span class="ticket-id">A046</span>
+                        <span class="wait-time">Temps d'attente: 12 min</span>
+                    </div>
+                    <div class="waiting-card">
+                        <span class="ticket-id">A047</span>
+                        <span class="wait-time">Temps d'attente: 12 min</span>
+                    </div>
+                    <div class="waiting-card">
+                        <span class="ticket-id">A048</span>
+                        <span class="wait-time">Temps d'attente: 12 min</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+</body>
+</html>
