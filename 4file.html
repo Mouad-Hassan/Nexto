@@ -7,53 +7,71 @@
 <link rel="stylesheet" href="4file.css">
 </head>
 <body>
-    
-<div class="site-frame">
-        <main class="queue-container">
-            <h1>File d'attente</h1>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-circle"></div>
+                <span class="logo-text">Nexto</span>
+            </div>
+            <a href="5admin.html" class="admin-link">Admin</a>
+        </header>
 
-            <table class="queue-table">
-                <thead>
-                    <tr>
-                        <th>Numéro</th>
-                        <th>Service</th>
-                        <th>Statut</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="num">A23</td>
-                        <td class="service">Dépôt</td>
-                        <td><span class="status-badge status-orange">En cours</span></td>
-                    </tr>
-                    <tr>
-                        <td class="num">A24</td>
-                        <td class="service">Retrait</td>
-                        <td><span class="status-badge status-white">En attente</span></td>
-                    </tr>
-                    <tr>
-                        <td class="num">A22</td>
-                        <td class="service">Dépôt</td>
-                        <td><span class="status-badge status-green">Terminé</span></td>
-                    </tr>
-                    <tr>
-                        <td class="num">A25</td>
-                        <td class="service">Consultation</td>
-                        <td><span class="status-badge status-white">En attente</span></td>
-                    </tr>
-                    <tr>
-                        <td class="num">A26</td>
-                        <td class="service">Retrait</td>
-                        <td><span class="status-badge status-white">En attente</span></td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1 class="title">File d'attente</h1>
 
-            <div class="info-banner">
+            <!-- Table -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-numero">Numéro</th>
+                            <th class="col-service">Service</th>
+                            <th class="col-statut">Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A23</td>
+                            <td>Dépôt</td>
+                            <td class="col-statut"><span class="badge badge-en-cours">En cours</span></td>
+                        </tr>
+                        <tr>
+                            <td>A24</td>
+                            <td>Retrait</td>
+                            <td class="col-statut"><span class="badge badge-en-attente">En attente</span></td>
+                        </tr>
+                        <tr>
+                            <td>A22</td>
+                            <td>Dépôt</td>
+                            <td class="col-statut"><span class="badge badge-termine">Terminé</span></td>
+                        </tr>
+                        <tr>
+                            <td>A25</td>
+                            <td>Consultation</td>
+                            <td class="col-statut"><span class="badge badge-en-attente">En attente</span></td>
+                        </tr>
+                        <tr>
+                            <td>A26</td>
+                            <td>Retrait</td>
+                            <td class="col-statut"><span class="badge badge-en-attente">En attente</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Wait time -->
+            <div class="wait-time-box">
                 Temps d'attente estimé : 12 minutes
             </div>
 
-            <button class="btn-refresh">Actualiser</button>
+            <!-- Centered Refresh button -->
+            <div class="refresh-container">
+                <a href="4file.html" class="refresh-btn">Actualiser</a>
+            </div>
         </main>
     </div>
+</body>
+     
  

@@ -1,156 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexto</title>
-  <link rel="stylesheet" href="1landing.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1landing.css">
 </head>
 <body>
-
-    <nav>
-        <div class="nav-logo">
-            <div class="circle"></div> Nexto
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Fonctionnalités</a></li>
-            <li><a href="#">Comment ça marche</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <a href="3ticket.html" class="btn-nav">Commencer</a>
-        
-    </nav>
-
-    <section class="hero">
-        <div class="hero-left">
-            <h1>Simplifiez la gestion des <span>files d'attente</span></h1>
-            <p>Solution moderne pour banques, hôpitaux et administrations. Réduisez le temps d'attente et améliorez l'expérience client.</p>
-            <div class="hero-btns">
-                <a href="3ticket.html" class="btn-primary">prendre ticket</a>
-                <button class="btn-secondary">Voir la démo</button>
-            </div>
-        </div>
-        <div class="hero-image-container">
-            <img src="images/Gemini_Generated_Image_7ulo5j7ulo5j7ulo.png" alt="Expérience fluide" class="hero-circle-img">
-        </div>
-    </section>
-
-    <section class="features">
     
-        <h2>Fonctionnalités</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <span class="feature-icon">🎟️</span>
-                <h3>Prise de ticket rapide</h3>
-                <p>Interface intuitive pour une prise de ticket en quelques secondes</p>
+</body>
+</html>
+<header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon"></span>
+                <span>Nexto</span>
             </div>
-            <div class="feature-card">
-                <span class="feature-icon">🟡</span>
-                <h3>Affichage en temps réel</h3>
-                <p>Suivez votre position dans la file d'attente en direct</p>
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                <li><a href="#comment">Comment ça marche</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="2accueil.html" class="btn-primary">Commencer</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+     <section class="hero" id="accueil">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>
+                    Simplifiez la gestion des
+                    <span class="highlight">files d'attente</span>
+                </h1>
+                <p class="hero-description">
+                    Solution moderne pour banques, hôpitaux et administrations. Réduisez le temps d'attente et améliorez l'expérience client.
+                </p>
+                <div class="hero-buttons">
+                    <a href="2accueil.html" class="btn-orange"> Prendre un ticket</a>
+                    <a  class="btn-green">  Voir la démo</a>
+                </div>
             </div>
-            <div class="feature-card">
-                <span class="feature-icon">👥</span>
-                <h3>Gestion admin simple</h3>
-                <p>Tableau de bord complet pour gérer toutes les files</p>
-            </div>
-            <div class="feature-card">
-                <span class="feature-icon">🕒</span>
-                <h3>Réduction du temps d'attente</h3>
-                <p>Optimisation automatique des flux de clients</p>
+            <div class="hero-image"></div>
+            <img src="images/Gemini_Generated_Image_7ulo5j7ulo5j7ulo.png" alt="img" class="circular-image">
+        </div>
+    </section>
+
+    <!-- ========================================
+         FONCTIONNALITÉS SECTION
+    ======================================== -->
+    <section class="fonctionnalites" id="fonctionnalites">
+        <div class="section-container">
+            <h2 class="section-title">Fonctionnalités</h2>
+            <div class="features-grid">
+                
+                <!-- Feature 1: Prise de ticket -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- CHEMIN VERS L'ICÔNE PNG -->
+                        <img src="images/01_prise_ticket.png" alt="Prise de ticket rapide">
+                    </div>
+                    <h3>Prise de ticket rapide</h3>
+                    <p>Interface intuitive pour une prise de ticket en quelques secondes</p>
+                </div>
+
+                <!-- Feature 2: Affichage temps réel -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/02_affichage_temps_reel.png" alt="Affichage en temps réel">
+                    </div>
+                    <h3>Affichage en temps réel</h3>
+                    <p>Suivez votre position dans la file d'attente en direct</p>
+                </div>
+
+                <!-- Feature 3: Gestion admin -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/03_gestion_admin.png" alt="Gestion admin simple">
+                    </div>
+                    <h3>Gestion admin simple</h3>
+                    <p>Tableau de bord complet pour gérer toutes les files</p>
+                </div>
+
+                <!-- Feature 4: Réduction temps -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/04_reduction_temps.png" alt="Réduction du temps d'attente">
+                    </div>
+                    <h3>Réduction du temps d'attente</h3>
+                    <p>Optimisation automatique des flux de clients</p>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="how">
+    <!-- ========================================
+         COMMENT ÇA MARCHE SECTION
+    ======================================== -->
+    <section class="how-it-works" id="comment">
+        <div class="section-container">
+            <h2 class="section-title">Comment ça marche</h2>
+            <div class="steps-grid">
+                
+                <!-- Step 1: Choisir un service -->
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="images/05_choisir_service.png" alt="Choisir un service">
+                    </div>
+                    <h3>Choisir un service</h3>
+                    <p>Sélectionnez le service dont vous avez besoin</p>
+                </div>
+
+                <!-- Step 2: Recevoir un numéro -->
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="images/06_recevoir_numero.png" alt="Recevoir un numéro">
+                    </div>
+                    <h3>Recevoir un numéro</h3>
+                    <p>Obtenez votre numéro de ticket instantanément</p>
+                </div>
+
+                <!-- Step 3: Attendre son tour -->
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="images/07_attendre_tour.png" alt="Attendre son tour">
+                    </div>
+                    <h3>Attendre son tour</h3>
+                    <p>Suivez votre position en temps réel</p>
+                </div>
+
+                <!-- Step 4: Être appelé -->
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="images/08_etre_appelle.png" alt="Être appelé">
+                    </div>
+                    <h3>Être appelé</h3>
+                    <p>Recevez une notification quand c'est votre tour</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ========================================
+         AVANTAGES SECTION
+    ======================================== -->
+    <section class="avantages" id="avantages">
+        <div class="section-container">
+            <h2 class="section-title">Avantages</h2>
+            <div class="advantages-list">
+                
+                <div class="advantage-item">
+                    <div class="advantage-dot"></div>
+                    <div class="advantage-content">
+                        <h3>Gain de temps</h3>
+                        <p>Réduisez le temps d'attente de vos clients et optimisez votre flux de travail</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-dot"></div>
+                    <div class="advantage-content">
+                        <h3>Organisation efficace</h3>
+                        <p>Gérez plusieurs files d'attente simultanément avec facilité</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-dot"></div>
+                    <div class="advantage-content">
+                        <h3>Meilleure expérience utilisateur</h3>
+                        <p>Offrez une expérience moderne et transparente à vos clients</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         
-        <h2>Comment ça marche</h2>
-        <div class="how-grid">
-            <div class="how-card">
-                <span class="how-icon">📱</span>
-                <h3>Choisir un service</h3>
-                <p>Sélectionnez le service dont vous avez besoin</p>
-            </div>
-            <div class="how-card">
-                <span class="how-icon">🎫</span>
-                <h3>Recevoir un numéro</h3>
-                <p>Obtenez votre numéro de ticket instantanément</p>
-            </div>
-            <div class="how-card">
-                <span class="how-icon">📢</span>
-                <h3>Attendre son tour</h3>
-                <p>Suivez votre position en temps réel</p>
-            </div>
-            <div class="how-card">
-                <span class="how-icon">🤝</span>
-                <h3>Etre appelé</h3>
-                <p>Recevez une notification quand c'est votre tour</p>
-            </div>
-        </div>
     </section>
 
-    <section class="advantages">
-        
-        <h2>Avantages</h2>
-        <div class="adv-list">
-            <div class="adv-item">
-                <div class="adv-dot"></div>
-                <div class="adv-text">
-                    <h3>Gain de temps</h3>
-                    <p>Réduisez le temps d'attente de vos clients et optimisez votre flux de travail</p>
-                </div>
-            </div>
-            <div class="adv-item">
-                <div class="adv-dot"></div>
-                <div class="adv-text">
-                    <h3>Organisation efficace</h3>
-                    <p>Gérez plusieurs files d'attente simultanément avec facilité</p>
-                </div>
-            </div>
-            <div class="adv-item">
-                <div class="adv-dot"></div>
-                <div class="adv-text">
-                    <h3>Meilleure expérience utilisateur</h3>
-                    <p>Offrez une expérience moderne et transparente à vos clients</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section">
+    <!-- ========================================
+         CTA SECTION
+    ======================================== -->
+    <section class="cta" id="commencer">
         <h2>Prêt à améliorer votre service ?</h2>
         <p>Commencez dès maintenant et transformez l'expérience de vos clients</p>
-        
-        <p class="btn-cta">Commencer</p>
+        <button class="btn-cta">Commencer maintenant</button>
     </section>
 
-    <footer>
-        <div class="footer-top">
-            <div class="footer-info">
-                <div class="footer-logo">
-                    <div class="circle"></div> Nexto
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">
+                    <span class="logo-icon"></span>
+                    <span>Nexto</span>
+                </a>
+                <p class="footer-copyright">© 2024 Nexto. Tous droits réservés.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Liens utiles</h4>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Tarifs</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
                 </div>
-                <p class="footer-tagline">© 2026 Nexto. Tous droits réservés.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Liens utiles</h4>
-                <ul>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Tarifs</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="#">contact@nexto.com</a></li>
-                    <li><a href="#">+33 1 23 45 67 89</a></li>
-                </ul>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@nexto.com">contact@nexto.com</a></li>
+                        <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
 
 </body>
-</html>

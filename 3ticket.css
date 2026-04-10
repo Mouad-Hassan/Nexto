@@ -143,6 +143,7 @@ body {
     font-size: 14px;
     box-shadow: 0 4px 10px rgba(230, 155, 0, 0.3);
     margin-top: 10px;
+    text-decoration: none;
 }
 
 /* Bouton Retour */
@@ -159,6 +160,7 @@ body {
     box-shadow: 0 4px 10px rgba(45, 74, 30, 0.2);
     margin-bottom: 30px;
     transition: opacity 0.2s;
+    text-decoration: none;
 }
 
 .btn-back:hover {

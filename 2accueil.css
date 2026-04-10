@@ -60,8 +60,12 @@ body {
     font-weight: 700;
     display: flex;
     gap: 15px;
+    text-decoration: none;
 }
-
+.nav-links-sma{
+color: #000000;
+text-decoration: none;
+}
 /* Contenu */
 .content {
     padding: 40px 30px;
@@ -98,6 +102,7 @@ body {
     font-size: 0.95rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* Ticket Card */
@@ -156,6 +161,7 @@ body {
     font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
+    text-decoration: none;
     width: fit-content;
 }
 
@@ -179,6 +185,7 @@ body {
     font-weight: 700;
     width: 100%;
     font-size: 0.9rem;
+    text-decoration: none;
 }
 
 .footer-note {
