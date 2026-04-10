@@ -21,7 +21,6 @@
             position: relative;
         }
 
-        /* Header */
         .header {
             display: flex;
             justify-content: space-between;
@@ -55,7 +54,7 @@
             text-decoration: none;
         }
 
-        /* Main Content */
+        
         .main-content {
             padding: 60px 40px;
             max-height: 60vh;
@@ -70,7 +69,7 @@
             color: #000;
         }
 
-        /* Table */
+        
         .table-container {
             margin-bottom: 30px;
         }
@@ -109,7 +108,7 @@
             text-align: right;
         }
 
-        /* Status badges */
+        
         .badge {
             display: inline-block;
             padding: 5px 12px;
@@ -135,7 +134,7 @@
             color: #fff;
         }
 
-        /* Wait time box */
+        
         .wait-time-box {
             background-color: #2d5a27;
             color: #fff;
@@ -148,7 +147,7 @@
             font-weight: bold;
         }
 
-        /* Centered Refresh Container */
+        
         .refresh-container {
             position: absolute;
             top: 50%;
@@ -157,7 +156,7 @@
             z-index: 10;
         }
 
-        /* Refresh button */
+        
         .refresh-btn {
             background-color: #e89a2e;
             color: #000;
